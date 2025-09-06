@@ -22,7 +22,7 @@ app.post("/conviteEmail", async (req, res) => {
     let info = await transporter.sendMail({
       from: `"${remetente}" <vitorhm.morais@gmail.com>`,
       to: email,
-      subject: "Convite para participar do Amigo Secreto 🎁",
+      subject: "Convite para participar do Amigo Secreto ",
       text: `Olá! Você foi convidado para participar do Amigo Secreto no grupo: ${grupo}. 
              Acesse o sistema e confirme sua participação!`,
     });
